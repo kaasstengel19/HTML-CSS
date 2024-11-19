@@ -1,0 +1,29 @@
+p{color:green;} 
+.rood{color:red;}
+#blauw{color:blue;}
+.align{text-align: center;}
+#gras{background-image: url("images/gras.png.png");}
+div.relative {
+    position: sticky;
+    top: 0px;
+    border: 10px solid #ff0000;
+  }
+
+  div:nth-child(2) *:nth-child(1){
+    color: white;
+  }
+  div:nth-child(2) *:nth-child(2){
+    color: pink;
+  }
+  div:nth-child(2) *:nth-child(3){
+    color: purple;
+  }
+  div:nth-child(2) *:nth-child(4){
+    color: yellow;
+  }
+  div:nth-child(2) *:nth-child(5){
+    color: brown;
+  }
+  a:hover{
+    color: purple;
+  }
