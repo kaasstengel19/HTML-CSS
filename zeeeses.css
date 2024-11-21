@@ -1,0 +1,55 @@
+#poez {
+  background-image: url("images/cats.png");
+  background-size: cover;
+}
+
+div.relative {
+  position: relative;
+  top: 50px;
+  left: 10px;
+  width: 1500px;
+  height: 58px;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  background-color: blue;
+}
+
+#text {
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  top: -34px;
+}
+
+
+div.wrm {
+  position: relative;
+  border: 3px dashed #ffffff;
+  top: 90px;
+  left: 325px;
+  width: 350px;
+  background-color: rgb(207, 207, 44);
+  height: 40px;
+}
+
+#text2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: -27px;
+}
+
+div.lijst {
+  position: relative;
+  border: 2px solid #000000;
+  background-color: #fddddd;
+  width: 350px;
+  left: 865px;
+  top: 100px;
+  text-align: center;
+}
+
+div:hover {
+  background-color: red;
+}
