@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin: 0;
+}
+
+.sub {
+    margin-left:50vw;
+    margin-top: 40vh;
+}
+
+.dob {margin-left:30vw;
+margin-top:60vh;}
