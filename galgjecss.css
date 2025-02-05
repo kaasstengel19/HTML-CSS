@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 60vh;
-    margin: 0;
+    margin-left: -17vw;
 }
 
 .login {
@@ -22,3 +22,7 @@ margin-top:-50px;}
 
 .s {margin-left:9px;
     margin-top:-50px;}
+
+#L {margin-left:-22vw;
+margin-top:60vh;}
+
