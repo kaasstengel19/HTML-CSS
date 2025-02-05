@@ -1,29 +1,58 @@
 let n1 = document.getElementById("kaas");
-let n2 = document.getElementsByClassName("k");
-let n3 = document.getElementsByClassName("a");
-let n4 = document.getElementsByClassName("s");
-let k = "k";
-let a = "a";
-let s = "s";
+
+let array = ["k", "a", "a", "s"];
+let ar2 = [];
+let levens = 10
+
+let ba = document.getElementById("k");
+
+let le = document.getElementById("L");
+
+for (let i = 0; i < array.length; i++) {
+    ar2.push(" _");
+    ba.innerText += " _";
+}
+
+le.innerText = "Levens: " + levens;
+
 function galgjejs(){
     console.log(n1.value);
-   
 
-    if(n1.value == k){
-        for (let i = 0; i < n2.length; i++) {
-            n2[i].textContent = "k ";
-        }
-    }
-
-    if(n1.value == a){
-        for (let i = 0; i < n3.length; i++) {
-            n3[i].textContent = "a a ";
-        }
-    }
-
-    if(n1.value == s){
-        for (let i = 0; i < n4.length; i++) {
-            n4[i].textContent = "s";
-        }
-    }
+   let text = "";
+   for (let i = 0; i < array.length; i++) {
+    if(n1.value === array[i]){
+        ar2[i] = n1.value;
+    } 
+    text += ar2[i]
 }
+let wrong = true
+for (let j = 0; j < array.length; j++){
+if(n1.value === array[j]){
+    wrong = false
+}
+}
+if(wrong === true){
+    levens -= 1;
+}
+
+if(levens === -1){
+    levens += 1;
+}
+
+if(n1.value === ""){
+    levens += 1;
+}
+ 
+if(levens === 0){
+    alert("Verloren;(");
+}
+
+if(ba.innerText == "kaas"){
+    alert("Gewonnen!!!!:)");
+}
+
+    le.innerText = "levens: " + levens;
+    ba.innerText = text;
+    n1.value = "";
+}
+
