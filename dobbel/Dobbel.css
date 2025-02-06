@@ -13,3 +13,23 @@ body {
 
 .dob {margin-left:30vw;
 margin-top:60vh;}
+
+#dice-container {
+    display: flex;
+    gap: 10px;
+}
+
+.dice {
+    width: 50px;
+    height: 50px;
+}
+
+.y {
+    margin-left:-15vw;
+    margin-top:-10vh;
+}
+
+.c {
+    margin-left:5.5vw;
+    margin-top:-10vh;
+}
